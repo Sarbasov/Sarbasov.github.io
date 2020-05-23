@@ -1,0 +1,135 @@
+﻿<!doctype html>
+
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+
+  <title>Вычисление процента доходности техники</title>
+  <!--<meta name="description" content="The HTML5 Herald">-->
+  <meta name="author" content="RenamedUser_63277358">
+
+  <!--<link rel="stylesheet" href="css/styles.css?v=1.0">-->
+
+  <script type="text/javascript">
+    function calculate() {
+     var totalFarmed = document.getElementById("TotalFarmed").value;
+     var tier = document.getElementById("Tier").value;
+     var win = document.getElementById("Win").value;
+     var spots = document.getElementById("Spots").value;
+     var damage = document.getElementById("Damage").value;
+     var assistedDamage = document.getElementById("AssistedDamage").value;
+     var damageAssistedByOthers = document.getElementById("DamageAssistedByOthers").value;
+     var cap = document.getElementById("Cap").value;
+
+     var battleResult = (700 * tier) + (win * 600 * tier) + (100 * spots) + (10 * damage) + (5 * assistedDamage) + (7.5 * damageAssistedByOthers) + (500 * cap);
+     document.getElementById("Result").value = (totalFarmed / battleResult * 100).toFixed(1);
+    }
+  </script>
+
+</head>
+
+<body>
+ <table>
+  <tbody>
+   <tr>
+    <td>
+     Получено кредитов без учета премиум-аккаунта и без учета зеленого бонуса за рейтинговый бой:
+    </td>
+    <td>
+     <input type="text" id="TotalFarmed" />
+    </td>
+   </tr>
+   <tr>
+    <td>
+     Уровень техники:
+    </td>
+    <td>
+     <select id="Tier">
+      <option value="1">1</option>
+      <option value="2">2</option>
+      <option value="3">3</option>
+      <option value="4">4</option>
+      <option value="5">5</option>
+      <option value="6">6</option>
+      <option value="7">7</option>
+      <option value="8">8</option>
+      <option value="9">9</option>
+      <option value="10">10</option>
+     </select>
+    </td>
+   </tr>
+   <tr>
+    <td>
+     Исход боя:
+    </td>
+    <td>
+     <select id="Win">
+      <option value="1">Победа</option>
+      <option value="0">Поражение или ничья</option>
+     </select>
+    </td>
+   </tr>
+   <tr>
+    <td>
+     Обнаружил противников ("Обнаружено противников" во вкладке Статистика):
+    </td>
+    <td>
+     <select id="Spots">
+      <option value="0">0</option>
+      <option value="1">1</option>
+      <option value="2">2</option>
+      <option value="3">3</option>
+      <option value="4">4</option>
+      <option value="5">5</option>
+      <option value="6">6</option>
+      <option value="7">7</option>
+     </select>
+    </td>
+   </tr>
+   <tr>
+    <td>
+     Нанесено урона вами без ничьей помощи (т.е. по своему засвету и партнеры по команде не гуслили противника):
+    </td>
+    <td>
+     <input type="text" id="Damage" />
+    </td>
+   </tr>
+   <tr>
+    <td>
+     Нанесено урона вами с помощью ваших партнеров (т.е. по чужому засвету либо партнеры по команде гуслили противника) - неизвестно, где это брать:
+    </td>
+    <td>
+     <input type="text" id="DamageAssistedByOthers" />
+    </td>
+   </tr>
+   <tr>
+    <td>
+     Нанесено урона другими игроками с вашей помощью ("Урон, нанесённый с помощью игрока" во вкладке Статистика):
+    </td>
+    <td>
+     <input type="text" id="AssistedDamage" />
+    </td>
+   </tr>
+   <tr>
+    <td>
+     Была ли победа по взятии базы во встречном бою с вашим участием во взятии базы:
+    </td>
+    <td>
+     <select id="Cap">
+      <option value="0">Нет</option>
+      <option value="1">Да</option>
+     </select>
+    </td>
+   </tr>
+   <tr>
+    <td>
+     <button onclick="calculate()">Рассчитать процент доходности кредитов</button>
+     <input type="text" id="Result" readonly /> процентов
+    </td>
+    <td>
+    </td>
+   </tr>
+  </tbody>
+ </table>
+</body>
+</html>
