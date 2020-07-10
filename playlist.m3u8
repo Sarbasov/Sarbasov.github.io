@@ -2189,6 +2189,6 @@ http://oncvq5kd.ottclub.xyz/iptv/7GCEMFFA9LAR2P/5041/index.m3u8
 #EXTINF:0 tvg-rec="3",Перший Західний
 #EXTGRP:Украина | Українські
 http://oncvq5kd.ottclub.xyz/iptv/7GCEMFFA9LAR2P/5042/index.m3u8
-#EXTINF:-1 tvg-rec="0" tvg-logo="https://sarbasov.github.io/aktobetv_logo.png",Актобе ТВ
+#EXTINF:-1 tvg-rec="0" tvg-logo="https://aktobetv.kz/assets/regions/logo/aqtobe.png",Актобе
 #EXTGRP:Казахстан | Қазақстан
 https://onrez.kaztrk.kz/regional/aktobetv/index.m3u8
