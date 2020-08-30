@@ -317,27 +317,9 @@ http://oncvq5kd.ottclub.xyz/iptv/7GCEMFFA9LAR2P/955/index.m3u8
 #EXTINF:0 tvg-rec="3",Вместе-РФ
 #EXTGRP:Общие
 http://oncvq5kd.ottclub.xyz/iptv/7GCEMFFA9LAR2P/2073/index.m3u8
-#EXTINF:0 tvg-rec="3",Россия-Культура
-#EXTGRP:Общие
-http://oncvq5kd.ottclub.xyz/iptv/7GCEMFFA9LAR2P/505/index.m3u8
 #EXTINF:0 tvg-rec="3",Про Бизнес
 #EXTGRP:Общие
 http://oncvq5kd.ottclub.xyz/iptv/7GCEMFFA9LAR2P/5043/index.m3u8
-#EXTINF:0 tvg-rec="0",Дождь HD
-#EXTGRP:Общие
-http://oncvq5kd.ottclub.xyz/iptv/7GCEMFFA9LAR2P/6308/index.m3u8
-#EXTINF:0 tvg-rec="0",Апостроф TV
-#EXTGRP:Общие
-http://oncvq5kd.ottclub.xyz/iptv/7GCEMFFA9LAR2P/6373/index.m3u8
-#EXTINF:0 tvg-rec="3",Е
-#EXTGRP:Общие
-http://oncvq5kd.ottclub.xyz/iptv/7GCEMFFA9LAR2P/5048/index.m3u8
-#EXTINF:0 tvg-rec="3",568 HD
-#EXTGRP:Общие
-http://oncvq5kd.ottclub.xyz/iptv/7GCEMFFA9LAR2P/5049/index.m3u8
-#EXTINF:0 tvg-rec="3",Ратник
-#EXTGRP:Общие
-http://oncvq5kd.ottclub.xyz/iptv/7GCEMFFA9LAR2P/2119/index.m3u8
 #EXTINF:0 tvg-rec="0",Россия-24 +2
 #EXTGRP:Новостные
 http://oncvq5kd.ottclub.xyz/iptv/7GCEMFFA9LAR2P/6013/index.m3u8
@@ -605,9 +587,6 @@ http://oncvq5kd.ottclub.xyz/iptv/7GCEMFFA9LAR2P/708/index.m3u8
 #EXTINF:0 tvg-rec="3",Русский бестселлер
 #EXTGRP:Кино
 http://oncvq5kd.ottclub.xyz/iptv/7GCEMFFA9LAR2P/905/index.m3u8
-#EXTINF:0 tvg-rec="3",Русский роман
-#EXTGRP:Кино
-http://oncvq5kd.ottclub.xyz/iptv/7GCEMFFA9LAR2P/906/index.m3u8
 #EXTINF:0 tvg-rec="3",Русский детектив
 #EXTGRP:Кино
 http://oncvq5kd.ottclub.xyz/iptv/7GCEMFFA9LAR2P/907/index.m3u8
@@ -713,27 +692,6 @@ http://oncvq5kd.ottclub.xyz/iptv/7GCEMFFA9LAR2P/2578/index.m3u8
 #EXTINF:0 tvg-rec="3",Зал 12
 #EXTGRP:Кино
 http://oncvq5kd.ottclub.xyz/iptv/7GCEMFFA9LAR2P/2579/index.m3u8
-#EXTINF:0 tvg-rec="0",Шокирующее HD
-#EXTGRP:Кино
-http://oncvq5kd.ottclub.xyz/iptv/7GCEMFFA9LAR2P/6299/index.m3u8
-#EXTINF:0 tvg-rec="0",Киносемья HD
-#EXTGRP:Кино
-http://oncvq5kd.ottclub.xyz/iptv/7GCEMFFA9LAR2P/6382/index.m3u8
-#EXTINF:0 tvg-rec="0",Киносвидание HD
-#EXTGRP:Кино
-http://oncvq5kd.ottclub.xyz/iptv/7GCEMFFA9LAR2P/6383/index.m3u8
-#EXTINF:0 tvg-rec="0",TV 1000 Action HD
-#EXTGRP:Кино
-http://oncvq5kd.ottclub.xyz/iptv/7GCEMFFA9LAR2P/6386/index.m3u8
-#EXTINF:0 tvg-rec="0",TV 1000 HD
-#EXTGRP:Кино
-http://oncvq5kd.ottclub.xyz/iptv/7GCEMFFA9LAR2P/6387/index.m3u8
-#EXTINF:0 tvg-rec="0",TV 1000 Русское кино HD
-#EXTGRP:Кино
-http://oncvq5kd.ottclub.xyz/iptv/7GCEMFFA9LAR2P/6388/index.m3u8
-#EXTINF:0 tvg-rec="0",Fox Life HD
-#EXTGRP:Кино
-http://oncvq5kd.ottclub.xyz/iptv/7GCEMFFA9LAR2P/6389/index.m3u8
 #EXTINF:0 tvg-rec="3",Матч! Премьер FHD
 #EXTGRP:Спорт
 http://oncvq5kd.ottclub.xyz/iptv/7GCEMFFA9LAR2P/2414/index.m3u8
@@ -968,9 +926,6 @@ http://oncvq5kd.ottclub.xyz/iptv/7GCEMFFA9LAR2P/738/index.m3u8
 #EXTINF:0 tvg-rec="3",Е HD
 #EXTGRP:Спорт
 http://oncvq5kd.ottclub.xyz/iptv/7GCEMFFA9LAR2P/5035/index.m3u8
-#EXTINF:0 tvg-rec="0",Старт HD
-#EXTGRP:Спорт
-http://oncvq5kd.ottclub.xyz/iptv/7GCEMFFA9LAR2P/6384/index.m3u8
 #EXTINF:0 tvg-rec="3",Stingray Festival 4K
 #EXTGRP:Музыка
 http://oncvq5kd.ottclub.xyz/iptv/7GCEMFFA9LAR2P/5006/index.m3u8
@@ -1193,9 +1148,6 @@ http://oncvq5kd.ottclub.xyz/iptv/7GCEMFFA9LAR2P/5055/index.m3u8
 #EXTINF:0 tvg-rec="3",Уникум
 #EXTGRP:Детские
 http://oncvq5kd.ottclub.xyz/iptv/7GCEMFFA9LAR2P/5056/index.m3u8
-#EXTINF:0 tvg-rec="3",Мультик HD
-#EXTGRP:Детские
-http://oncvq5kd.ottclub.xyz/iptv/7GCEMFFA9LAR2P/921/index.m3u8
 #EXTINF:0 tvg-rec="3",Home 4K
 #EXTGRP:Познавательные
 http://oncvq5kd.ottclub.xyz/iptv/7GCEMFFA9LAR2P/4002/index.m3u8
@@ -1565,21 +1517,6 @@ http://oncvq5kd.ottclub.xyz/iptv/7GCEMFFA9LAR2P/538/index.m3u8
 #EXTINF:0 tvg-rec="0",Теледом
 #EXTGRP:Познавательные
 http://oncvq5kd.ottclub.xyz/iptv/7GCEMFFA9LAR2P/954/index.m3u8
-#EXTINF:0 tvg-rec="0",ЕГЭ ТВ
-#EXTGRP:Познавательные
-http://oncvq5kd.ottclub.xyz/iptv/7GCEMFFA9LAR2P/6301/index.m3u8
-#EXTINF:0 tvg-rec="0",Авто Плюс HD
-#EXTGRP:Познавательные
-http://oncvq5kd.ottclub.xyz/iptv/7GCEMFFA9LAR2P/6369/index.m3u8
-#EXTINF:0 tvg-rec="0",Viasat Explore HD
-#EXTGRP:Познавательные
-http://oncvq5kd.ottclub.xyz/iptv/7GCEMFFA9LAR2P/6381/index.m3u8
-#EXTINF:0 tvg-rec="0",Museum HD
-#EXTGRP:Познавательные
-http://oncvq5kd.ottclub.xyz/iptv/7GCEMFFA9LAR2P/6390/index.m3u8
-#EXTINF:0 tvg-rec="0",HGTV HD RU
-#EXTGRP:Познавательные
-http://oncvq5kd.ottclub.xyz/iptv/7GCEMFFA9LAR2P/6391/index.m3u8
 #EXTINF:0 tvg-rec="3",MyZen TV 4K
 #EXTGRP:Развлекательные
 http://oncvq5kd.ottclub.xyz/iptv/7GCEMFFA9LAR2P/5002/index.m3u8
@@ -1637,21 +1574,6 @@ http://oncvq5kd.ottclub.xyz/iptv/7GCEMFFA9LAR2P/2035/index.m3u8
 #EXTINF:0 tvg-rec="3",Раз ТВ
 #EXTGRP:Развлекательные
 http://oncvq5kd.ottclub.xyz/iptv/7GCEMFFA9LAR2P/2069/index.m3u8
-#EXTINF:0 tvg-rec="0",СТС HD
-#EXTGRP:Развлекательные
-http://oncvq5kd.ottclub.xyz/iptv/7GCEMFFA9LAR2P/6303/index.m3u8
-#EXTINF:0 tvg-rec="0",ТНТ +2
-#EXTGRP:Развлекательные
-http://oncvq5kd.ottclub.xyz/iptv/7GCEMFFA9LAR2P/6020/index.m3u8
-#EXTINF:0 tvg-rec="0",ТНТ4 HD
-#EXTGRP:Развлекательные
-http://oncvq5kd.ottclub.xyz/iptv/7GCEMFFA9LAR2P/6370/index.m3u8
-#EXTINF:0 tvg-rec="0",Spike HD
-#EXTGRP:Развлекательные
-http://oncvq5kd.ottclub.xyz/iptv/7GCEMFFA9LAR2P/6371/index.m3u8
-#EXTINF:0 tvg-rec="0",Театр HD
-#EXTGRP:Развлекательные
-http://oncvq5kd.ottclub.xyz/iptv/7GCEMFFA9LAR2P/6385/index.m3u8
 #EXTINF:0 tvg-rec="3",Сочи HD
 #EXTGRP:Региональные
 http://oncvq5kd.ottclub.xyz/iptv/7GCEMFFA9LAR2P/2433/index.m3u8
@@ -1973,6 +1895,9 @@ http://oncvq5kd.ottclub.xyz/iptv/7GCEMFFA9LAR2P/5008/index.m3u8
 #EXTINF:0 tvg-rec="0",5 канал UA
 #EXTGRP:Украина | Українські
 http://oncvq5kd.ottclub.xyz/iptv/7GCEMFFA9LAR2P/945/index.m3u8
+#EXTINF:0 tvg-rec="0",Vintage TV UA
+#EXTGRP:Украина | Українські
+http://oncvq5kd.ottclub.xyz/iptv/7GCEMFFA9LAR2P/6009/index.m3u8
 #EXTINF:0 tvg-rec="0",FilmBox
 #EXTGRP:Украина | Українські
 http://oncvq5kd.ottclub.xyz/iptv/7GCEMFFA9LAR2P/948/index.m3u8
@@ -2264,150 +2189,6 @@ http://oncvq5kd.ottclub.xyz/iptv/7GCEMFFA9LAR2P/5041/index.m3u8
 #EXTINF:0 tvg-rec="3",Перший Західний
 #EXTGRP:Украина | Українські
 http://oncvq5kd.ottclub.xyz/iptv/7GCEMFFA9LAR2P/5042/index.m3u8
-#EXTINF:0 tvg-rec="0",Vintage TV UA
-#EXTGRP:Украина | Українські
-http://oncvq5kd.ottclub.xyz/iptv/7GCEMFFA9LAR2P/6009/index.m3u8
-#EXTINF:0 tvg-rec="0",ICTV UA
-#EXTGRP:Украина | Українські
-http://oncvq5kd.ottclub.xyz/iptv/7GCEMFFA9LAR2P/6302/index.m3u8
-#EXTINF:0 tvg-rec="0",СТБ UA
-#EXTGRP:Украина | Українські
-http://oncvq5kd.ottclub.xyz/iptv/7GCEMFFA9LAR2P/6304/index.m3u8
-#EXTINF:0 tvg-rec="0",Интер UA
-#EXTGRP:Украина | Українські
-http://oncvq5kd.ottclub.xyz/iptv/7GCEMFFA9LAR2P/6305/index.m3u8
-#EXTINF:0 tvg-rec="0",АТР UA
-#EXTGRP:Украина | Українські
-http://oncvq5kd.ottclub.xyz/iptv/7GCEMFFA9LAR2P/6306/index.m3u8
-#EXTINF:0 tvg-rec="0",XSPORT UA
-#EXTGRP:Украина | Українські
-http://oncvq5kd.ottclub.xyz/iptv/7GCEMFFA9LAR2P/6309/index.m3u8
-#EXTINF:0 tvg-rec="0",1+1 UA
-#EXTGRP:Украина | Українські
-http://oncvq5kd.ottclub.xyz/iptv/7GCEMFFA9LAR2P/6310/index.m3u8
-#EXTINF:0 tvg-rec="0",Эспресо TV UA
-#EXTGRP:Украина | Українські
-http://oncvq5kd.ottclub.xyz/iptv/7GCEMFFA9LAR2P/6311/index.m3u8
-#EXTINF:0 tvg-rec="0",Пиксель UA
-#EXTGRP:Украина | Українські
-http://oncvq5kd.ottclub.xyz/iptv/7GCEMFFA9LAR2P/6312/index.m3u8
-#EXTINF:0 tvg-rec="0",Спорт-1 UA
-#EXTGRP:Украина | Українські
-http://oncvq5kd.ottclub.xyz/iptv/7GCEMFFA9LAR2P/6313/index.m3u8
-#EXTINF:0 tvg-rec="0",Спорт-2 UA
-#EXTGRP:Украина | Українські
-http://oncvq5kd.ottclub.xyz/iptv/7GCEMFFA9LAR2P/6314/index.m3u8
-#EXTINF:0 tvg-rec="0",112 Украина HD UA
-#EXTGRP:Украина | Українські
-http://oncvq5kd.ottclub.xyz/iptv/7GCEMFFA9LAR2P/6315/index.m3u8
-#EXTINF:0 tvg-rec="0",1+1 International UA
-#EXTGRP:Украина | Українські
-http://oncvq5kd.ottclub.xyz/iptv/7GCEMFFA9LAR2P/6316/index.m3u8
-#EXTINF:0 tvg-rec="0",1+1 HD UA
-#EXTGRP:Украина | Українські
-http://oncvq5kd.ottclub.xyz/iptv/7GCEMFFA9LAR2P/6317/index.m3u8
-#EXTINF:0 tvg-rec="0",ТРК Украина HD UA
-#EXTGRP:Украина | Українські
-http://oncvq5kd.ottclub.xyz/iptv/7GCEMFFA9LAR2P/6318/index.m3u8
-#EXTINF:0 tvg-rec="0",Перший Т2 UA
-#EXTGRP:Украина | Українські
-http://oncvq5kd.ottclub.xyz/iptv/7GCEMFFA9LAR2P/6319/index.m3u8
-#EXTINF:0 tvg-rec="0",Индиго UA
-#EXTGRP:Украина | Українські
-http://oncvq5kd.ottclub.xyz/iptv/7GCEMFFA9LAR2P/6320/index.m3u8
-#EXTINF:0 tvg-rec="0",Эспресо ТВ HD UA
-#EXTGRP:Украина | Українські
-http://oncvq5kd.ottclub.xyz/iptv/7GCEMFFA9LAR2P/6321/index.m3u8
-#EXTINF:0 tvg-rec="0",Болт HD UA
-#EXTGRP:Украина | Українські
-http://oncvq5kd.ottclub.xyz/iptv/7GCEMFFA9LAR2P/6322/index.m3u8
-#EXTINF:0 tvg-rec="0",Lale HD UA
-#EXTGRP:Украина | Українські
-http://oncvq5kd.ottclub.xyz/iptv/7GCEMFFA9LAR2P/6323/index.m3u8
-#EXTINF:0 tvg-rec="0",UA
-#EXTGRP:Украина | Українські
-http://oncvq5kd.ottclub.xyz/iptv/7GCEMFFA9LAR2P/6324/index.m3u8
-#EXTINF:0 tvg-rec="0",Star Cinema HD UA
-#EXTGRP:Украина | Українські
-http://oncvq5kd.ottclub.xyz/iptv/7GCEMFFA9LAR2P/6325/index.m3u8
-#EXTINF:0 tvg-rec="0",Star Family HD UA
-#EXTGRP:Украина | Українські
-http://oncvq5kd.ottclub.xyz/iptv/7GCEMFFA9LAR2P/6326/index.m3u8
-#EXTINF:0 tvg-rec="0",8 канал HD UA
-#EXTGRP:Украина | Українські
-http://oncvq5kd.ottclub.xyz/iptv/7GCEMFFA9LAR2P/6327/index.m3u8
-#EXTINF:0 tvg-rec="0",4 канал HD UA
-#EXTGRP:Украина | Українські
-http://oncvq5kd.ottclub.xyz/iptv/7GCEMFFA9LAR2P/6328/index.m3u8
-#EXTINF:0 tvg-rec="0",1+1 International UA
-#EXTGRP:Украина | Українські
-http://oncvq5kd.ottclub.xyz/iptv/7GCEMFFA9LAR2P/6329/index.m3u8
-#EXTINF:0 tvg-rec="0",Бігуді UA
-#EXTGRP:Украина | Українські
-http://oncvq5kd.ottclub.xyz/iptv/7GCEMFFA9LAR2P/6330/index.m3u8
-#EXTINF:0 tvg-rec="0",XSPORT UA
-#EXTGRP:Украина | Українські
-http://oncvq5kd.ottclub.xyz/iptv/7GCEMFFA9LAR2P/6331/index.m3u8
-#EXTINF:0 tvg-rec="0",NIKI Kids HD UA
-#EXTGRP:Украина | Українські
-http://oncvq5kd.ottclub.xyz/iptv/7GCEMFFA9LAR2P/6332/index.m3u8
-#EXTINF:0 tvg-rec="0",NIKI Junior HD UA
-#EXTGRP:Украина | Українські
-http://oncvq5kd.ottclub.xyz/iptv/7GCEMFFA9LAR2P/6333/index.m3u8
-#EXTINF:0 tvg-rec="0",М1 HD UA
-#EXTGRP:Украина | Українські
-http://oncvq5kd.ottclub.xyz/iptv/7GCEMFFA9LAR2P/6334/index.m3u8
-#EXTINF:0 tvg-rec="0",М2 HD UA
-#EXTGRP:Украина | Українські
-http://oncvq5kd.ottclub.xyz/iptv/7GCEMFFA9LAR2P/6335/index.m3u8
-#EXTINF:0 tvg-rec="0",PRO Все UA
-#EXTGRP:Украина | Українські
-http://oncvq5kd.ottclub.xyz/iptv/7GCEMFFA9LAR2P/6336/index.m3u8
-#EXTINF:0 tvg-rec="0",Lale UA
-#EXTGRP:Украина | Українські
-http://oncvq5kd.ottclub.xyz/iptv/7GCEMFFA9LAR2P/6337/index.m3u8
-#EXTINF:0 tvg-rec="0",Максi ТВ UA
-#EXTGRP:Украина | Українські
-http://oncvq5kd.ottclub.xyz/iptv/7GCEMFFA9LAR2P/6338/index.m3u8
-#EXTINF:0 tvg-rec="0",ICTV UA
-#EXTGRP:Украина | Українські
-http://oncvq5kd.ottclub.xyz/iptv/7GCEMFFA9LAR2P/6339/index.m3u8
-#EXTINF:0 tvg-rec="0",Новий канал UA
-#EXTGRP:Украина | Українські
-http://oncvq5kd.ottclub.xyz/iptv/7GCEMFFA9LAR2P/6340/index.m3u8
-#EXTINF:0 tvg-rec="0",Кус Кус HD UA
-#EXTGRP:Украина | Українські
-http://oncvq5kd.ottclub.xyz/iptv/7GCEMFFA9LAR2P/6341/index.m3u8
-#EXTINF:0 tvg-rec="0",2+2 UA
-#EXTGRP:Украина | Українські
-http://oncvq5kd.ottclub.xyz/iptv/7GCEMFFA9LAR2P/6342/index.m3u8
-#EXTINF:0 tvg-rec="0",НЛО UA
-#EXTGRP:Украина | Українські
-http://oncvq5kd.ottclub.xyz/iptv/7GCEMFFA9LAR2P/6343/index.m3u8
-#EXTINF:0 tvg-rec="0",НЛО ТВ HD
-#EXTGRP:Украина | Українські
-http://oncvq5kd.ottclub.xyz/iptv/7GCEMFFA9LAR2P/6372/index.m3u8
-#EXTINF:0 tvg-rec="0",Индиго ТВ HD
-#EXTGRP:Украина | Українські
-http://oncvq5kd.ottclub.xyz/iptv/7GCEMFFA9LAR2P/6374/index.m3u8
-#EXTINF:0 tvg-rec="0",ОЦЕ HD
-#EXTGRP:Украина | Українські
-http://oncvq5kd.ottclub.xyz/iptv/7GCEMFFA9LAR2P/6375/index.m3u8
-#EXTINF:0 tvg-rec="0",UA:Перший HD
-#EXTGRP:Украина | Українські
-http://oncvq5kd.ottclub.xyz/iptv/7GCEMFFA9LAR2P/6376/index.m3u8
-#EXTINF:0 tvg-rec="0",ТЕТ HD
-#EXTGRP:Украина | Українські
-http://oncvq5kd.ottclub.xyz/iptv/7GCEMFFA9LAR2P/6377/index.m3u8
-#EXTINF:0 tvg-rec="0",2+2 HD
-#EXTGRP:Украина | Українські
-http://oncvq5kd.ottclub.xyz/iptv/7GCEMFFA9LAR2P/6378/index.m3u8
-#EXTINF:0 tvg-rec="0",ПлюсПлюс HD
-#EXTGRP:Украина | Українські
-http://oncvq5kd.ottclub.xyz/iptv/7GCEMFFA9LAR2P/6379/index.m3u8
-#EXTINF:0 tvg-rec="0",Оце
-#EXTGRP:Украина | Українські
-http://oncvq5kd.ottclub.xyz/iptv/7GCEMFFA9LAR2P/6380/index.m3u8
 #EXTINF:-1 tvg-rec="0" tvg-logo="https://aktobetv.kz/assets/regions/logo/aqtobe.png",Актобе
 #EXTGRP:Казахстан | Қазақстан
 https://onrez.kaztrk.kz/regional/aktobetv/index.m3u8
