@@ -2408,3 +2408,6 @@ http://oncvq5kd.ottclub.xyz/iptv/7GCEMFFA9LAR2P/6379/index.m3u8
 #EXTINF:0 tvg-rec="0",Оце
 #EXTGRP:Украина | Українські
 http://oncvq5kd.ottclub.xyz/iptv/7GCEMFFA9LAR2P/6380/index.m3u8
+#EXTINF:-1 tvg-rec="0" tvg-logo="https://aktobetv.kz/assets/regions/logo/aqtobe.png",Актобе
+#EXTGRP:Казахстан | Қазақстан
+https://onrez.kaztrk.kz/regional/aktobetv/index.m3u8
