@@ -1,4 +1,4 @@
-#EXTM3U
+#EXTM3U url-tvg="https://iptvx.one/epg/epg.xml.gz"
 #EXTINF:0 tvg-rec="3",Первый FHD
 #EXTGRP:Общие
 http://oncvq5kd.ottclub.xyz/iptv/7GCEMFFA9LAR2P/2402/index.m3u8
@@ -734,6 +734,9 @@ http://oncvq5kd.ottclub.xyz/iptv/7GCEMFFA9LAR2P/6388/index.m3u8
 #EXTINF:0 tvg-rec="0",Fox Life HD
 #EXTGRP:Кино
 http://oncvq5kd.ottclub.xyz/iptv/7GCEMFFA9LAR2P/6389/index.m3u8
+#EXTINF:0 tvg-rec="0",Мосфильм. Золотая коллекция
+#EXTGRP:Кино
+http://oncvq5kd.ottclub.xyz/iptv/7GCEMFFA9LAR2P/6392/index.m3u8
 #EXTINF:0 tvg-rec="3",Матч! Премьер FHD
 #EXTGRP:Спорт
 http://oncvq5kd.ottclub.xyz/iptv/7GCEMFFA9LAR2P/2414/index.m3u8
@@ -971,6 +974,9 @@ http://oncvq5kd.ottclub.xyz/iptv/7GCEMFFA9LAR2P/5035/index.m3u8
 #EXTINF:0 tvg-rec="0",Старт HD
 #EXTGRP:Спорт
 http://oncvq5kd.ottclub.xyz/iptv/7GCEMFFA9LAR2P/6384/index.m3u8
+#EXTINF:0 tvg-rec="0",Golf TV HD
+#EXTGRP:Спорт
+http://oncvq5kd.ottclub.xyz/iptv/7GCEMFFA9LAR2P/6393/index.m3u8
 #EXTINF:0 tvg-rec="3",Stingray Festival 4K
 #EXTGRP:Музыка
 http://oncvq5kd.ottclub.xyz/iptv/7GCEMFFA9LAR2P/5006/index.m3u8
@@ -1088,6 +1094,9 @@ http://oncvq5kd.ottclub.xyz/iptv/7GCEMFFA9LAR2P/2156/index.m3u8
 #EXTINF:0 tvg-rec="0",Муз ТВ +4
 #EXTGRP:Музыка
 http://oncvq5kd.ottclub.xyz/iptv/7GCEMFFA9LAR2P/6036/index.m3u8
+#EXTINF:0 tvg-rec="0",SONG TV HD RU
+#EXTGRP:Музыка
+http://oncvq5kd.ottclub.xyz/iptv/7GCEMFFA9LAR2P/6394/index.m3u8
 #EXTINF:0 tvg-rec="3",СТС Kids HD
 #EXTGRP:Детские
 http://oncvq5kd.ottclub.xyz/iptv/7GCEMFFA9LAR2P/2001/index.m3u8
