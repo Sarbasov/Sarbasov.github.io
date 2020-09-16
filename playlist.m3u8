@@ -1,4 +1,4 @@
-#EXTM3U url-tvg="https://iptvx.one/epg/epg.xml.gz"
+#EXTM3U url-tvg="http://mepg.it999.ru/epg.xml.gz"
 #EXTINF:0 tvg-rec="3",Первый FHD
 #EXTGRP:Общие
 http://oncvq5kd.ottclub.xyz/iptv/7GCEMFFA9LAR2P/2402/index.m3u8
