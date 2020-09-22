@@ -5,3 +5,6 @@ https://stream.kaztrk.kz/regional/aktobetv/index.m3u8
 #EXTINF:-1 tvg-rec="0" tvg-logo="https://elarna.kz/images/Logo_ElArna.png",Ел арна
 #EXTGRP:Казахстан | Қазақстан
 https://elarna-live.cdnvideo.ru/elarna/elarna/chunklist.m3u8?hls_proxy_host=pub1.rtmp.s01.l.elarna
+#EXTINF:-1 tvg-rec="0" tvg-logo="https://inbusiness.kz/img/logo.jpg",Atameken Business
+#EXTGRP:Казахстан | Қазақстан
+https://live-atameken.cdnvideo.ru/atameken/smil:atameken.smil/chunklist_b596000.m3u8?hls_proxy_host=pub3.rtmp.s01.l.atameken
