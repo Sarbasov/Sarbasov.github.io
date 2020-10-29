@@ -4,19 +4,19 @@
 https://stream.kaztrk.kz/regional/aktobetv/index.m3u8
 #EXTINF:-1 tvg-rec="0" tvg-logo="http://rikatv.kz/bitrix/templates/infogis/images/logo_rika_main1.png",Рика ТВ
 #EXTGRP:Казахстан | Қазақстан
-http://live-rikatv.cdnvideo.ru/rikatv/rikatv_tcode.sdp/chunklist.m3u8?hls_proxy_host=pub2.rtmp.s01.l.rikatv
+http://live-rikatv.cdnvideo.ru/rikatv/rikatv_tcode.sdp/playlist.m3u8
 #EXTINF:-1 tvg-rec="0" tvg-logo="https://elarna.kz/images/Logo_ElArna.png",El Arna
 #EXTGRP:Казахстан | Қазақстан
-https://elarna-live.cdnvideo.ru/elarna/elarna/chunklist.m3u8?hls_proxy_host=pub1.rtmp.s01.l.elarna
+https://elarna-live.cdnvideo.ru/elarna/elarna/playlist.m3u8
 #EXTINF:-1 tvg-rec="0" tvg-logo="https://inbusiness.kz/img/logo.jpg",Atameken Business
 #EXTGRP:Казахстан | Қазақстан
-https://live-atameken.cdnvideo.ru/atameken/smil:atameken.smil/chunklist_b596000.m3u8?hls_proxy_host=pub3.rtmp.s01.l.atameken
+https://live-atameken.cdnvideo.ru/atameken/smil:atameken.smil/playlist.m3u8
 #EXTINF:-1 tvg-rec="0" tvg-logo="https://abaitv.kz/imgs/footer-logo.png",Абай ТВ
 #EXTGRP:Казахстан | Қазақстан
-https://live-abaitv.cdnvideo.ru/abaitv_kz/abaitv/chunklist.m3u8?hls_proxy_host=pub3.rtmp.s01.l.abaitv
-#EXTINF:-1 tvg-rec="0" tvg-logo="https://almaty.tv/images/u32.png",Алматы ТВ
+https://abaitv-stream.daitsuna.net/abaitv/abaitv/index.m3u8
+#EXTINF:-1 tvg-rec="0" tvg-logo="cimages/u32.png",Алматы ТВ
 #EXTGRP:Казахстан | Қазақстан
-https://live-almatytv.cdnvideo.ru/almatytv/almatytv.sdp/chunklist.m3u8?hls_proxy_host=pub1.rtmp.s01.l.almatytv
+https://live-almatytv.cdnvideo.ru/almatytv/almatytv.sdp/playlist.m3u8
 #EXTINF:-1 tvg-rec="0" tvg-logo="https://muzzone.tv/uploads/s/q/c/u/qcucpibooyuc/img/full_N1P7zGCZ.png",Muzzone!
 #EXTGRP:Казахстан | Қазақстан
 https://muzzone-stream.daitsuna.net/muzzone/muzzone/index.m3u8
