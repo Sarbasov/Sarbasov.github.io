@@ -1,8 +1,8 @@
 #EXTM3U
-#EXTINF:-1 tvg-rec="0" tvg-logo="https://aktobetv.kz/assets/regions/logo/aqtobe.png",Актобе
+#EXTINF:-1 tvg-rec="0" tvg-logo="https://aktobetv.kz/assets/regions/logo/aqtobe.png",Aqtobe
 #EXTGRP:Казахстан | Қазақстан
 https://stream.kaztrk.kz/regional/aktobetv/index.m3u8
-#EXTINF:-1 tvg-rec="0" tvg-logo="http://rikatv.kz/bitrix/templates/infogis/images/logo_rika_main1.png",Рика ТВ
+#EXTINF:-1 tvg-rec="0" tvg-logo="http://rikatv.kz/bitrix/templates/infogis/images/logo_rika_main1.png",Rika TV
 #EXTGRP:Казахстан | Қазақстан
 http://live-rikatv.cdnvideo.ru/rikatv/rikatv_tcode.sdp/playlist.m3u8
 #EXTINF:-1 tvg-rec="0" tvg-logo="https://elarna.kz/images/Logo_ElArna.png",El Arna
@@ -11,15 +11,15 @@ https://elarna-live.cdnvideo.ru/elarna/elarna/playlist.m3u8
 #EXTINF:-1 tvg-rec="0" tvg-logo="https://inbusiness.kz/img/logo.jpg",Atameken Business
 #EXTGRP:Казахстан | Қазақстан
 https://live-atameken.cdnvideo.ru/atameken/smil:atameken.smil/playlist.m3u8
-#EXTINF:-1 tvg-rec="0" tvg-logo="https://abaitv.kz/imgs/footer-logo.png",Абай ТВ
+#EXTINF:-1 tvg-rec="0" tvg-logo="https://abaitv.kz/imgs/footer-logo.png",Abay TV
 #EXTGRP:Казахстан | Қазақстан
 https://abaitv-stream.daitsuna.net/abaitv/abaitv/index.m3u8
-#EXTINF:-1 tvg-rec="0" tvg-logo="cimages/u32.png",Алматы ТВ
+#EXTINF:-1 tvg-rec="0" tvg-logo="cimages/u32.png",Almaty TV
 #EXTGRP:Казахстан | Қазақстан
 https://live-almatytv.cdnvideo.ru/almatytv/almatytv.sdp/playlist.m3u8
 #EXTINF:-1 tvg-rec="0" tvg-logo="https://muzzone.tv/uploads/s/q/c/u/qcucpibooyuc/img/full_N1P7zGCZ.png",Muzzone!
 #EXTGRP:Казахстан | Қазақстан
 https://muzzone-stream.daitsuna.net/muzzone/muzzone/index.m3u8
-#EXTINF:-1 tvg-rec="0" tvg-logo="https://www.ktk.kz/images/logo/2018-light.png",КТК
+#EXTINF:-1 tvg-rec="0" tvg-logo="https://www.ktk.kz/images/logo/2018-light.png",KTK
 #EXTGRP:Казахстан | Қазақстан
 https://wz-kt.ktk.kz/ktklive/smil:ktk-live.smil/playlist.m3u8
