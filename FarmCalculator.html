@@ -1,135 +1,116 @@
 ﻿<!doctype html>
+<html lang="ru">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+	<meta name="author" content="RenamedUser_63277358">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 
-<html lang="en">
-<head>
-  <meta charset="utf-8">
-
-  <title>Вычисление процента доходности техники</title>
-  <!--<meta name="description" content="The HTML5 Herald">-->
-  <meta name="author" content="RenamedUser_63277358">
-
-  <!--<link rel="stylesheet" href="css/styles.css?v=1.0">-->
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
 
   <script type="text/javascript">
     function calculate() {
-     var totalFarmed = document.getElementById("TotalFarmed").value;
-     var tier = document.getElementById("Tier").value;
-     var win = document.getElementById("Win").value;
-     var spots = document.getElementById("Spots").value;
-     var damage = document.getElementById("Damage").value;
-     var assistedDamage = document.getElementById("AssistedDamage").value;
-     var damageAssistedByOthers = document.getElementById("DamageAssistedByOthers").value;
-     var cap = document.getElementById("Cap").value;
+     var totalFarmed = $("#TotalFarmed").val();
+     var tier = $("#Tier").val();
+     var win = $("#Win").val();
+     var spots = $("#Spots").val();
+     var damage = $("#Damage").val();
+     var assistedDamage = $("#AssistedDamage").val();
+     var damageAssistedByOthers = $("#DamageAssistedByOthers").val();
+     var cap = $("#Cap").val();
 
      var battleResult = (700 * tier) + (win * 600 * tier) + (100 * spots) + (10 * damage) + (5 * assistedDamage) + (7.5 * damageAssistedByOthers) + (500 * cap);
-     document.getElementById("Result").value = (totalFarmed / battleResult * 100).toFixed(1);
+     $("#Result").val((totalFarmed / battleResult * 100).toFixed(2));
     }
   </script>
 
-</head>
+    <title>Вычисление процента доходности техники</title>
+  </head>
+  <body>
+    <h1>Вычисление процента доходности техники</h1>
+	
+	<form style="margin: auto;">
+		<div class="form-group">
+			<label for="TotalFarmed" class="form-check-label">Получено кредитов без учета премиум-аккаунта и без учета зеленого бонуса за рейтинговый бой и без учета влияния бустера:</label>
+			<input type="text" id="TotalFarmed" class="form-control" />
+		</div>
+		
+		<div class="form-group">
+			<label for="Tier" class="form-check-label">Уровень техники:</label>
+			<select id="Tier" class="form-control">
+				<option value="1">1</option>
+				<option value="2">2</option>
+				<option value="3">3</option>
+				<option value="4">4</option>
+				<option value="5">5</option>
+				<option value="6">6</option>
+				<option value="7">7</option>
+				<option value="8">8</option>
+				<option value="9">9</option>
+				<option value="10">10</option>
+			</select>
+		</div>
 
-<body>
- <table>
-  <tbody>
-   <tr>
-    <td>
-     Получено кредитов без учета премиум-аккаунта и без учета зеленого бонуса за рейтинговый бой:
-    </td>
-    <td>
-     <input type="text" id="TotalFarmed" />
-    </td>
-   </tr>
-   <tr>
-    <td>
-     Уровень техники:
-    </td>
-    <td>
-     <select id="Tier">
-      <option value="1">1</option>
-      <option value="2">2</option>
-      <option value="3">3</option>
-      <option value="4">4</option>
-      <option value="5">5</option>
-      <option value="6">6</option>
-      <option value="7">7</option>
-      <option value="8">8</option>
-      <option value="9">9</option>
-      <option value="10">10</option>
-     </select>
-    </td>
-   </tr>
-   <tr>
-    <td>
-     Исход боя:
-    </td>
-    <td>
-     <select id="Win">
-      <option value="1">Победа</option>
-      <option value="0">Поражение или ничья</option>
-     </select>
-    </td>
-   </tr>
-   <tr>
-    <td>
-     Обнаружил противников ("Обнаружено противников" во вкладке Статистика):
-    </td>
-    <td>
-     <select id="Spots">
-      <option value="0">0</option>
-      <option value="1">1</option>
-      <option value="2">2</option>
-      <option value="3">3</option>
-      <option value="4">4</option>
-      <option value="5">5</option>
-      <option value="6">6</option>
-      <option value="7">7</option>
-     </select>
-    </td>
-   </tr>
-   <tr>
-    <td>
-     Нанесено урона вами без ничьей помощи (т.е. по своему засвету и партнеры по команде не гуслили противника):
-    </td>
-    <td>
-     <input type="text" id="Damage" />
-    </td>
-   </tr>
-   <tr>
-    <td>
-     Нанесено урона вами с помощью ваших партнеров (т.е. по чужому засвету либо партнеры по команде гуслили противника) - неизвестно, где это брать:
-    </td>
-    <td>
-     <input type="text" id="DamageAssistedByOthers" />
-    </td>
-   </tr>
-   <tr>
-    <td>
-     Нанесено урона другими игроками с вашей помощью ("Урон, нанесённый с помощью игрока" во вкладке Статистика):
-    </td>
-    <td>
-     <input type="text" id="AssistedDamage" />
-    </td>
-   </tr>
-   <tr>
-    <td>
-     Была ли победа по взятии базы во встречном бою с вашим участием во взятии базы:
-    </td>
-    <td>
-     <select id="Cap">
-      <option value="0">Нет</option>
-      <option value="1">Да</option>
-     </select>
-    </td>
-   </tr>
-   <tr>
-    <td>
-     <button onclick="calculate()">Рассчитать процент доходности кредитов</button>
-     <input type="text" id="Result" readonly /> процентов
-    </td>
-    <td>
-    </td>
-   </tr>
-  </tbody>
- </table>
-</body>
+		<div class="form-group">
+			<label for="Win" class="form-check-label">Исход боя:</label>
+			<select id="Win" class="form-control">
+				<option value="1">Победа</option>
+				<option value="0">Поражение или ничья</option>
+			</select>
+		</div>
+
+		<div class="form-group">
+			<label for="Spots" class="form-check-label">Обнаружил противников ("Обнаружено противников" во вкладке Статистика):</label>
+			<select id="Spots" class="form-control">
+				<option value="0">0</option>
+				<option value="1">1</option>
+				<option value="2">2</option>
+				<option value="3">3</option>
+				<option value="4">4</option>
+				<option value="5">5</option>
+				<option value="6">6</option>
+				<option value="7">7</option>
+			</select>
+		</div>
+
+		<div class="form-group">
+			<label for="Damage" class="form-check-label">Нанесено урона вами без ничьей помощи (т.е. по своему засвету и партнеры по команде не гуслили противника):</label>
+			<input type="text" id="Damage"  class="form-control" />
+		</div>
+
+		<div class="form-group">
+			<label for="DamageAssistedByOthers" class="form-check-label">Нанесено урона вами с помощью ваших партнеров (т.е. по чужому засвету либо партнеры по команде гуслили противника) - неизвестно, где это брать:</label>
+			<input type="text" id="DamageAssistedByOthers"  class="form-control" />
+		</div>
+
+		<div class="form-group">
+			<label for="AssistedDamage" class="form-check-label">Нанесено урона другими игроками с вашей помощью ("Урон, нанесённый с помощью игрока" во вкладке Статистика):</label>
+			<input type="text" id="AssistedDamage" class="form-control" />
+		</div>
+
+		<div class="form-group">
+			<label for="Cap" class="form-check-label">Была ли победа по взятии базы во встречном бою с вашим участием во взятии базы:</label>
+			<select id="Cap" class="form-control">
+				<option value="0">Нет</option>
+				<option value="1">Да</option>
+			</select>
+		</div>
+
+		<div class="form-group">
+			<input type="button" onclick="calculate();" value="Рассчитать процент доходности кредитов" />
+		</div>
+		
+		<div class="form-group">
+			<label for="Result" class="form-check-label">Результат в процентах:</label>
+			<input type="text" id="Result" readonly  class="form-control" />
+		</div>
+	</form>
+
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+  </body>
 </html>
