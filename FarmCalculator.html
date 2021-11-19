@@ -9,21 +9,21 @@
     <!-- Bootstrap CSS -->
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
 
-  <script type="text/javascript">
-    function calculate() {
-     var totalFarmed = $("#TotalFarmed").val();
-     var tier = $("#Tier").val();
-     var win = $("#Win").val();
-     var spots = $("#Spots").val();
-     var damage = $("#Damage").val();
-     var assistedDamage = $("#AssistedDamage").val();
-     var damageAssistedByOthers = $("#DamageAssistedByOthers").val();
-     var cap = $("#Cap").val();
+    <script type="text/javascript">
+		function calculate() {
+			const totalFarmed = $("#TotalFarmed").val();
+			const tier = $("#Tier").val();
+			const win = $("#Win").val();
+			const spots = $("#Spots").val();
+			const damage = $("#Damage").val();
+			const assistedDamage = $("#AssistedDamage").val();
+			const damageAssistedByOthers = $("#DamageAssistedByOthers").val();
+			const cap = $("#Cap").val();
 
-     var battleResult = (700 * tier) + (win * 600 * tier) + (100 * spots) + (10 * damage) + (5 * assistedDamage) + (7.5 * damageAssistedByOthers) + (500 * cap);
-     $("#Result").val((totalFarmed / battleResult * 100).toFixed(2));
-    }
-  </script>
+			const battleResult = (700 * tier) + (win * 600 * tier) + (100 * spots) + (10 * damage) + (5 * assistedDamage) + (7.5 * damageAssistedByOthers) + (500 * cap);
+			$("#Result").val((totalFarmed / battleResult * 100).toFixed(3));
+		}
+    </script>
 
     <title>Вычисление процента доходности техники в WoT Blitz</title>
   </head>
@@ -32,23 +32,23 @@
 	
 	<form style="margin: 15px;">
 		<div class="form-group">
-			<label for="TotalFarmed" class="form-check-label">Получено кредитов без учета премиум-аккаунта и без учета зеленого бонуса за рейтинговый бой и без учета влияния бустера:</label>
-			<input type="text" id="TotalFarmed" class="form-control" />
+			<label for="TotalFarmed" class="form-check-label">Получено кредитов без учета премиум-аккаунта и без учета зеленого бонуса за рейтинговый бой и без учета влияния бустера ("Кредиты за бой", столбец "Без премиума" во вкладке Кредиты):</label>
+			<input type="number" id="TotalFarmed" min="0" step="1" class="form-control" />
 		</div>
 		
 		<div class="form-group">
 			<label for="Tier" class="form-check-label">Уровень техники:</label>
 			<select id="Tier" class="form-control">
-				<option value="1">1</option>
-				<option value="2">2</option>
-				<option value="3">3</option>
-				<option value="4">4</option>
-				<option value="5">5</option>
-				<option value="6">6</option>
-				<option value="7">7</option>
-				<option value="8">8</option>
-				<option value="9">9</option>
 				<option value="10">10</option>
+				<option value="9">9</option>
+				<option value="8">8</option>
+				<option value="7">7</option>
+				<option value="6">6</option>
+				<option value="5">5</option>
+				<option value="4">4</option>
+				<option value="3">3</option>
+				<option value="2">2</option>
+				<option value="1">1</option>
 			</select>
 		</div>
 
@@ -76,17 +76,17 @@
 
 		<div class="form-group">
 			<label for="Damage" class="form-check-label">Нанесено урона вами без ничьей помощи (т.е. по своему засвету и партнеры по команде не гуслили противника):</label>
-			<input type="text" id="Damage"  class="form-control" />
+			<input type="number" id="Damage"  min="0" step="1" class="form-control" />
 		</div>
 
 		<div class="form-group">
 			<label for="DamageAssistedByOthers" class="form-check-label">Нанесено урона вами с помощью ваших партнеров (т.е. по чужому засвету либо партнеры по команде гуслили противника) - неизвестно, где это брать:</label>
-			<input type="text" id="DamageAssistedByOthers"  class="form-control" />
+			<input type="number" id="DamageAssistedByOthers" min="0" step="1" class="form-control" />
 		</div>
 
 		<div class="form-group">
 			<label for="AssistedDamage" class="form-check-label">Нанесено урона другими игроками с вашей помощью ("Урон, нанесённый с помощью игрока" во вкладке Статистика):</label>
-			<input type="text" id="AssistedDamage" class="form-control" />
+			<input type="number" id="AssistedDamage" min="0" step="1" class="form-control" />
 		</div>
 
 		<div class="form-group">
@@ -103,7 +103,7 @@
 		
 		<div class="form-group">
 			<label for="Result" class="form-check-label">Результат в процентах:</label>
-			<input type="text" id="Result" readonly="true" class="form-control" />
+			<input type="number" id="Result" readonly="true" min="0" class="form-control" />
 		</div>
 	</form>
 
