@@ -20,8 +20,39 @@ https://live-almatytv.cdnvideo.ru/almatytv/almatytv.sdp/playlist.m3u8
 #EXTINF:-1 tvg-rec="0" tvg-logo="https://muzzone.tv/uploads/s/q/c/u/qcucpibooyuc/img/full_N1P7zGCZ.png",Muzzone!
 #EXTGRP:Казахстан | Қазақстан
 https://muzzone-stream.daitsuna.net/muzzone/muzzone/index.m3u8
-#EXTINF:-1 tvg-rec="0" tvg-logo="https://www.ktk.kz/images/logo/2018-light.png",KTK4
+#EXTINF:-1 tvg-rec="0" tvg-logo="https://www.ktk.kz/images/logo/2018-light.png",KTK M3U8
+#EXTGRP:Казахстан | Қазақстан
+https://wz-kt.ktk.kz/ktklive/smil:ktk-live.smil/playlist.m3u8
+#EXTINF:-1 tvg-rec="0" tvg-logo="https://www.ktk.kz/images/logo/2018-light.png",KTK M3U
+#EXTGRP:Казахстан | Қазақстан
+https://wz-kt.ktk.kz/ktklive/smil:ktk-live.smil/playlist.m3u
+#EXTINF:-1 tvg-rec="0" tvg-logo="https://www.ktk.kz/images/logo/2018-light.png",KTK HQ M3U8
+#EXTGRP:Казахстан | Қазақстан
+https://wz-kt.ktk.kz/ktklive/live.hq/playlist.m3u8
+#EXTINF:-1 tvg-rec="0" tvg-logo="https://www.ktk.kz/images/logo/2018-light.png",KTK HQ M3U
+#EXTGRP:Казахстан | Қазақстан
+https://wz-kt.ktk.kz/ktklive/live.hq/playlist.m3u
+#EXTINF:-1 tvg-rec="0" tvg-logo="https://www.ktk.kz/images/logo/2018-light.png",KTK LQ M3U8
+#EXTGRP:Казахстан | Қазақстан
+https://wz-kt.ktk.kz/ktklive/live.lq/playlist.m3u8
+#EXTINF:-1 tvg-rec="0" tvg-logo="https://www.ktk.kz/images/logo/2018-light.png",KTK LQ M3U
+#EXTGRP:Казахстан | Қазақстан
+https://wz-kt.ktk.kz/ktklive/live.lq/playlist.m3u
+#EXTINF:-1 tvg-rec="0" tvg-logo="https://www.ktk.kz/images/logo/2018-light.png",KTK IP M3U8
+#EXTGRP:Казахстан | Қазақстан
+http://89.218.30.37/ktklive/smil:ktk-live.smil/playlist.m3u8
+#EXTINF:-1 tvg-rec="0" tvg-logo="https://www.ktk.kz/images/logo/2018-light.png",KTK IP M3U
+#EXTGRP:Казахстан | Қазақстан
+http://89.218.30.37/ktklive/smil:ktk-live.smil/playlist.m3u
+#EXTINF:-1 tvg-rec="0" tvg-logo="https://www.ktk.kz/images/logo/2018-light.png",KTK IP HQ M3U8
+#EXTGRP:Казахстан | Қазақстан
+http://89.218.30.37/ktklive/live.hq/playlist.m3u8
+#EXTINF:-1 tvg-rec="0" tvg-logo="https://www.ktk.kz/images/logo/2018-light.png",KTK IP HQ M3U
+#EXTGRP:Казахстан | Қазақстан
+http://89.218.30.37/ktklive/live.hq/playlist.m3u
+#EXTINF:-1 tvg-rec="0" tvg-logo="https://www.ktk.kz/images/logo/2018-light.png",KTK IP LQ M3U8
+#EXTGRP:Казахстан | Қазақстан
+http://89.218.30.37/ktklive/live.lq/playlist.m3u8
+#EXTINF:-1 tvg-rec="0" tvg-logo="https://www.ktk.kz/images/logo/2018-light.png",KTK IP LQ M3U
 #EXTGRP:Казахстан | Қазақстан
 http://89.218.30.37/ktklive/live.lq/playlist.m3u
-#https://wz-kt.ktk.kz/ktklive/live.hq/playlist.m3u8
-#https://wz-kt.ktk.kz/ktklive/smil:ktk-live.smil/playlist.m3u8
