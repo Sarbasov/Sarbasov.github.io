@@ -13,13 +13,13 @@ https://elarna-live.cdnvideo.ru/elarna/elarna/playlist.m3u8
 https://live-atameken.cdnvideo.ru/atameken/smil:atameken.smil/playlist.m3u8
 #EXTINF:-1 tvg-rec="0" tvg-logo="https://abaitv.kz/imgs/footer-logo.png",Abay TV
 #EXTGRP:Казахстан | Қазақстан
-https://abaitv-stream.daitsuna.net/abaitv/abaitv/index.m3u8
+https://abaitv-stream.qazcdn.com/abaitv/abaitv/playlist.m3u8
 #EXTINF:-1 tvg-rec="0" tvg-logo="cimages/u32.png",Almaty TV
 #EXTGRP:Казахстан | Қазақстан
 https://live-almatytv.cdnvideo.ru/almatytv/almatytv.sdp/playlist.m3u8
 #EXTINF:-1 tvg-rec="0" tvg-logo="https://muzzone.tv/uploads/s/q/c/u/qcucpibooyuc/img/full_N1P7zGCZ.png",Muzzone!
 #EXTGRP:Казахстан | Қазақстан
-https://muzzone-stream.daitsuna.net/muzzone/muzzone/index.m3u8
+https://muzzone-stream.daitsuna.net/muzzondvr/muzzone_dvr/playlist_dvr.m3u8
 #EXTINF:-1 tvg-rec="0" tvg-logo="https://www.ktk.kz/images/logo/2018-light.png",КТК
 #EXTGRP:Казахстан | Қазақстан
 http://89.218.30.37/ktklive/smil:ktk-live.smil/playlist.m3u8
