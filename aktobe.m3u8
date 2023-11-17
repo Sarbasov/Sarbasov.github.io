@@ -23,3 +23,9 @@ https://muzzone-stream.daitsuna.net/muzzondvr/muzzone_dvr/playlist_dvr.m3u8
 #EXTINF:-1 tvg-rec="0" tvg-logo="https://www.ktk.kz/images/logo/2018-light.png",КТК
 #EXTGRP:Казахстан | Қазақстан
 http://89.218.30.37/ktklive/smil:ktk-live.smil/playlist.m3u8
+#EXTINF:-1 tvg-rec="0",Qazaqstan
+#EXTGRP:Казахстан | Қазақстан
+https://qazaqstantv-stream.qazcdn.com/qazaqstantv/qazaqstantv/playlist.m3u8
+#EXTINF:-1 tvg-rec="0",QazSport
+#EXTGRP:Казахстан | Қазақстан
+https://qazsporttv-stream.qazcdn.com/qazsporttv/qazsporttv/playlist.m3u8
