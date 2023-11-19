@@ -29,3 +29,12 @@ https://qazaqstantv-stream.qazcdn.com/qazaqstantv/qazaqstantv/playlist.m3u8
 #EXTINF:-1 tvg-rec="0",QazSport
 #EXTGRP:Казахстан | Қазақстан
 https://qazsporttv-stream.qazcdn.com/qazsporttv/qazsporttv/playlist.m3u8
+#EXTINF:-1 tvg-rec="0" tvg-logo="https://khabar.kz/2022/templates/gk_news/img/khabar.png",Хабар
+#EXTGRP:Казахстан | Қазақстан
+https://livekhabar-srt.cdnvideo.ru/khabarsrt/khabarsrt/tracks-v1a1/mono.m3u8
+#EXTINF:-1 tvg-rec="0" tvg-logo="https://24.kz/templates/khabar24/img/logo.png",Хабар 24
+#EXTGRP:Казахстан | Қазақстан
+https://24kz-srt.cdnvideo.ru/24kzsrt/24kzsrt/tracks-v1a1/mono.m3u8
+#EXTINF:-1 tvg-rec="0" tvg-logo="https://31.kz/images/logo/logo.svg",31
+#EXTGRP:Казахстан | Қазақстан
+https://31kz-streams.daitsuna.net/31kz/31kz/playlist.m3u8
