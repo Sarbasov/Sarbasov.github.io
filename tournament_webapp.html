@@ -90,6 +90,10 @@
         #delete-btn {
             background-color: var(--tg-theme-destructive-color, #ff3b30);
         }
+
+        input:required:invalid {
+            border-color: var(--tg-theme-destructive-color);
+        }
     </style>
 </head>
 <body>
@@ -250,7 +254,15 @@
 
     // Add this to your JavaScript in tournament_webapp.html
     tg.onEvent('webAppDataReceived', (event) => {
-        const data = JSON.parse(event.data);
+        tg.MainButton.hideProgress();
+        try {
+            const data = JSON.parse(event.data);
+            if (data.error) {
+                alert(`Error: ${data.error}`);
+            }
+        } catch (e) {
+            console.error('Failed to parse response', e);
+        }
 
         if (data.action === 'display_tournaments') {
             // Your existing tournament display code
@@ -263,17 +275,29 @@
 
     // Modify your saveTournament function to show feedback
     function saveTournament() {
-        const form = document.getElementById('tournament-form');
-        if (!form.checkValidity()) {
+        // Validate form
+        if (!document.getElementById('tournament-form').checkValidity()) {
             alert('Please fill all required fields');
             return;
         }
+
+        // Show loading spinner
+        tg.MainButton.showProgress(true);
 
         const formData = {
             id: document.getElementById('tournament-id').value,
             event_name: document.getElementById('event-name').value,
             event_datetime: document.getElementById('event-datetime').value,
-            // ... rest of your form data
+            location_name: document.getElementById('location-name').value,
+            number_of_teams: parseInt(document.getElementById('teams-count').value),
+            number_of_sectors: parseInt(document.getElementById('sectors-count').value),
+            players_per_game: parseInt(document.getElementById('players-per-game').value),
+            players_registered: parseInt(document.getElementById('players-registered').value),
+            round_robin_rounds: parseInt(document.getElementById('round-robin').value),
+            playoff_starts_at: document.getElementById('playoff-stage').value,
+            playoff_seeding: document.getElementById('seeding-method').value,
+            competition_type: document.getElementById('competition-type').value,
+            comment: document.getElementById('comment').value
         };
 
         tg.sendData(JSON.stringify({
