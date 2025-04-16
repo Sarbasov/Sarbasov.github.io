@@ -206,16 +206,12 @@
         document.getElementById('delete-btn').style.display = 'inline-block';
     }
 
-    // Modify your saveTournament function to show feedback
     function saveTournament() {
         // Validate form
         if (!document.getElementById('tournament-form').checkValidity()) {
             alert('Please fill all required fields');
             return;
         }
-
-        // Show loading spinner
-        tg.MainButton.showProgress(true);
 
         const formData = {
             id: document.getElementById('tournament-id').value,
@@ -233,13 +229,11 @@
             comment: document.getElementById('comment').value
         };
 
-        let sendingDataJson = JSON.stringify({
+        // Send data through WebApp
+        tg.sendData(JSON.stringify({
             action: formData.id ? 'update_tournament' : 'create_tournament',
-            data: formData,
-            web_app_user_id: tg.initDataUnsafe.user.id
-        })
-
-        tg.sendData(sendingDataJson);
+            data: formData
+        }));
     }
 
     tg.ready(); // Notify Telegram that the Web App is ready
