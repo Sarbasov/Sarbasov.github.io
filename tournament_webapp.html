@@ -255,21 +255,45 @@
     // Add this to your JavaScript in tournament_webapp.html
     tg.onEvent('webAppDataReceived', (event) => {
         tg.MainButton.hideProgress();
-        try {
-            const data = JSON.parse(event.data);
-            if (data.error) {
-                alert(`Error: ${data.error}`);
-            }
-        } catch (e) {
-            console.error('Failed to parse response', e);
+        const data = JSON.parse(event.data);
+        if (data.error) {
+            alert(`Error: ${data.error}`);
         }
 
         if (data.action === 'display_tournaments') {
-            // Your existing tournament display code
+            const listContainer = document.getElementById('tournaments-list');
+            listContainer.innerHTML = '';
+
+            data.tournaments.forEach(tournament => {
+                const item = document.createElement('div');
+                item.className = 'tournament-item';
+
+                const name = document.createElement('div');
+                name.className = 'tournament-name';
+                name.textContent = tournament.event_name;
+
+                const date = document.createElement('div');
+                date.className = 'tournament-date';
+                date.textContent = new Date(tournament.event_datetime).toLocaleString();
+
+                const editBtn = document.createElement('button');
+                editBtn.textContent = 'Edit';
+                editBtn.onclick = () => showEditForm(tournament);
+
+                item.appendChild(name);
+                item.appendChild(date);
+                item.appendChild(editBtn);
+                listContainer.appendChild(item);
+            });
         }
         else if (data.action === 'reload') {
             // Refresh the list after successful save
             showListView();
+            loadTournaments();
+        }
+        else if (data.action === 'error') {
+            alert(`Error: ${data.error}`);
+            return;
         }
     });
 
