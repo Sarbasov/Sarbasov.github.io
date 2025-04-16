@@ -255,7 +255,6 @@
         }
     }
 
-    // Add this to your JavaScript in tournament_webapp.html
     tg.onEvent('webAppDataReceived', (event) => {
         tg.MainButton.hideProgress();
         const data = JSON.parse(event.data);
@@ -337,8 +336,12 @@
         tg.sendData(sendingDataJson);
     }
 
-    // Initial load
-    loadTournaments();
+    tg.ready(); // Notify Telegram that the Web App is ready
+    tg.onEvent('viewportChanged', (event) => {
+        if (event.isStateStable) {
+            loadTournaments();
+        }
+    });
 </script>
 </body>
 </html>
