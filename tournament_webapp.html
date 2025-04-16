@@ -239,29 +239,6 @@
         tg.sendData(JSON.stringify({ action: 'list_tournaments' }));
     }
 
-    function saveTournament() {
-        const formData = {
-            id: document.getElementById('tournament-id').value,
-            event_name: document.getElementById('event-name').value,
-            event_datetime: document.getElementById('event-datetime').value,
-            location_name: document.getElementById('location-name').value,
-            number_of_teams: parseInt(document.getElementById('teams-count').value),
-            number_of_sectors: parseInt(document.getElementById('sectors-count').value),
-            players_per_game: parseInt(document.getElementById('players-per-game').value),
-            players_registered: parseInt(document.getElementById('players-registered').value),
-            round_robin_rounds: parseInt(document.getElementById('round-robin').value),
-            playoff_starts_at: document.getElementById('playoff-stage').value,
-            playoff_seeding: document.getElementById('seeding-method').value,
-            competition_type: document.getElementById('competition-type').value,
-            comment: document.getElementById('comment').value
-        };
-
-        tg.sendData(JSON.stringify({
-            action: document.getElementById('tournament-id').value ? 'update_tournament' : 'create_tournament',
-            data: formData
-        }));
-    }
-
     function deleteTournament() {
         if (confirm('Are you sure you want to delete this tournament?')) {
             tg.sendData(JSON.stringify({
@@ -271,35 +248,42 @@
         }
     }
 
+    // Add this to your JavaScript in tournament_webapp.html
     tg.onEvent('webAppDataReceived', (event) => {
         const data = JSON.parse(event.data);
 
         if (data.action === 'display_tournaments') {
-            const listContainer = document.getElementById('tournaments-list');
-            listContainer.innerHTML = '';
-
-            data.tournaments.forEach(tournament => {
-                const item = document.createElement('div');
-                item.style.padding = '10px';
-                item.style.borderBottom = '1px solid #eee';
-
-                const name = document.createElement('strong');
-                name.textContent = tournament.event_name;
-
-                const date = document.createElement('div');
-                date.textContent = new Date(tournament.event_datetime).toLocaleString();
-
-                const editBtn = document.createElement('button');
-                editBtn.textContent = 'Edit';
-                editBtn.onclick = () => showEditForm(tournament);
-
-                item.appendChild(name);
-                item.appendChild(date);
-                item.appendChild(editBtn);
-                listContainer.appendChild(item);
-            });
+            // Your existing tournament display code
+        }
+        else if (data.action === 'reload') {
+            // Refresh the list after successful save
+            showListView();
         }
     });
+
+    // Modify your saveTournament function to show feedback
+    function saveTournament() {
+        const form = document.getElementById('tournament-form');
+        if (!form.checkValidity()) {
+            alert('Please fill all required fields');
+            return;
+        }
+
+        const formData = {
+            id: document.getElementById('tournament-id').value,
+            event_name: document.getElementById('event-name').value,
+            event_datetime: document.getElementById('event-datetime').value,
+            // ... rest of your form data
+        };
+
+        tg.sendData(JSON.stringify({
+            action: formData.id ? 'update_tournament' : 'create_tournament',
+            data: formData
+        }));
+
+        // Show loading state
+        tg.MainButton.showProgress(false);
+    }
 
     // Initial load
     loadTournaments();
