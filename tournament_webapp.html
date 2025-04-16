@@ -189,6 +189,9 @@
 
 <script>
     let tg = window.Telegram.WebApp;
+    console.log("WebApp initData:", tg.initData);
+    console.log("WebApp version:", tg.version);
+
     tg.expand();
     tg.MainButton.setText("Close").show().onClick(() => tg.close());
 
@@ -324,13 +327,14 @@
             comment: document.getElementById('comment').value
         };
 
-        tg.sendData(JSON.stringify({
+        let sendingDataJson = JSON.stringify({
             action: formData.id ? 'update_tournament' : 'create_tournament',
-            data: formData
-        }));
+            data: formData,
+            web_app_user_id: tg.initDataUnsafe.user.id  // Add user ID
+        })
 
-        // Show loading state
-        tg.MainButton.showProgress(false);
+        console.log("Sending data with tg.sendData:", sendingDataJson);
+        tg.sendData(sendingDataJson);
     }
 
     // Initial load
