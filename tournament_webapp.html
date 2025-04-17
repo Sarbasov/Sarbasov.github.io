@@ -209,30 +209,35 @@
         }
     }
 
-    // Update the code that checks for editId
-    // Check for edit parameter in URL
-    const urlParams = new URLSearchParams(window.location.search);
-    const editData = urlParams.get('edit');
-
-    if (editData) {
-        try {
-            const tournament = JSON.parse(decodeURIComponent(editData));
-
-            // Format datetime for input
-            const dt = new Date(tournament.event_datetime);
-            tournament.event_datetime = dt.toISOString().slice(0, 16);
-
-            // Show form with prefilled data
-            document.getElementById('list-view').style.display = 'none';
-            document.getElementById('form-view').style.display = 'block';
-            document.getElementById('form-title').textContent = 'Edit Tournament';
-            showEditForm(tournament);
-        } catch (e) {
-            console.error('Error parsing tournament data:', e);
-            tg.showAlert('Failed to load tournament data');
-            showCreateForm();
-        }
+    // Function to parse URL parameters
+    function getUrlParameter(name) {
+        name = name.replace(/[[]/, '\\[').replace(/[\]]/, '\\]');
+        const regex = new RegExp('[\\?&]' + name + '=([^&#]*)');
+        const results = regex.exec(location.search);
+        return results === null ? '' : decodeURIComponent(results[1].replace(/\+/g, ' '));
     }
+
+    // Check for edit parameter when page loads
+    document.addEventListener('DOMContentLoaded', () => {
+        const editData = getUrlParameter('edit');
+
+        if (editData) {
+            try {
+                const tournament = JSON.parse(editData);
+
+                // Format datetime for input
+                const dt = new Date(tournament.event_datetime);
+                tournament.event_datetime = dt.toISOString().slice(0, 16);
+
+                // Show form with prefilled data
+                showEditForm(tournament);
+            } catch (e) {
+                console.error('Error parsing tournament data:', e);
+                tg.showAlert('Failed to load tournament data. Creating new tournament instead.');
+                showCreateForm();
+            }
+        }
+    });
 
     function updateSectors() {
         const teams = parseInt(document.getElementById('teams-count').value) || 0;
@@ -259,6 +264,8 @@
         document.getElementById('list-view').style.display = 'none';
         document.getElementById('form-view').style.display = 'block';
         document.getElementById('form-title').textContent = 'Edit Tournament';
+
+        // Fill form fields
         document.getElementById('tournament-id').value = tournament.id;
         document.getElementById('event-name').value = tournament.event_name;
         document.getElementById('event-datetime').value = tournament.event_datetime;
@@ -272,7 +279,6 @@
         document.getElementById('seeding-method').value = tournament.playoff_seeding;
         document.getElementById('competition-type').value = tournament.competition_type;
         document.getElementById('comment').value = tournament.comment || '';
-        document.getElementById('delete-btn').style.display = 'inline-block';
     }
 
     function saveTournament() {
