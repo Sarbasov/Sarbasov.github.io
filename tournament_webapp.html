@@ -99,12 +99,7 @@
 
         <div class="form-group">
             <label for="teams-count">Number of Teams</label>
-            <input type="number" id="teams-count" min="2" onchange="updateSectors()" required>
-        </div>
-
-        <div class="form-group">
-            <label for="sectors-count">Number of Sectors</label>
-            <input type="number" id="sectors-count" readonly>
+            <input type="number" id="teams-count" min="2" required>
         </div>
 
         <div class="form-group">
@@ -195,11 +190,6 @@
         }
     });
 
-    function updateSectors() {
-        const teams = parseInt(document.getElementById('teams-count').value) || 0;
-        document.getElementById('sectors-count').value = Math.max(1, Math.floor(teams / 2));
-    }
-
     function updateRegisteredPlayers() {
         const perGame = parseInt(document.getElementById('players-per-game').value) || 0;
         document.getElementById('players-registered').value = perGame + 1;
@@ -212,7 +202,6 @@
         document.getElementById('tournament-id').value = '';
         document.getElementById('delete-btn').style.display = 'none';
         document.getElementById('tournament-form').reset();
-        updateSectors();
         updateRegisteredPlayers();
     }
 
@@ -227,7 +216,6 @@
         document.getElementById('event-datetime').value = tournament.event_datetime;
         document.getElementById('location-name').value = tournament.location_name;
         document.getElementById('teams-count').value = tournament.number_of_teams;
-        document.getElementById('sectors-count').value = tournament.number_of_sectors;
         document.getElementById('players-per-game').value = tournament.players_per_game;
         document.getElementById('players-registered').value = tournament.players_registered;
         document.getElementById('round-robin').value = tournament.round_robin_rounds;
@@ -250,7 +238,6 @@
             event_datetime: document.getElementById('event-datetime').value,
             location_name: document.getElementById('location-name').value,
             number_of_teams: parseInt(document.getElementById('teams-count').value),
-            number_of_sectors: parseInt(document.getElementById('sectors-count').value),
             players_per_game: parseInt(document.getElementById('players-per-game').value),
             players_registered: parseInt(document.getElementById('players-registered').value),
             round_robin_rounds: parseInt(document.getElementById('round-robin').value),
