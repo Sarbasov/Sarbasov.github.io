@@ -165,50 +165,6 @@
     tg.expand();
     tg.MainButton.setText("Close").show().onClick(() => tg.close());
 
-    async function fetchTournamentData(tournamentId) {
-        tg.showPopup({
-            title: 'Loading',
-            message: 'Fetching tournament data...',
-        }, () => {});
-
-        try {
-            // Send request to bot
-            const data = {
-                action: 'get_tournament',
-                tournament_id: tournamentId
-            };
-
-            // This will trigger the web_app_data handler in your bot
-            tg.sendData(JSON.stringify(data));
-
-            // Wait for response (this requires setting up a message listener)
-            return new Promise((resolve) => {
-                const listener = (event) => {
-                    try {
-                        const response = JSON.parse(event.data);
-                        if (response.type === 'tournament_data') {
-                            // Format datetime for input
-                            const dt = new Date(response.data.event_datetime);
-                            response.data.event_datetime = dt.toISOString().slice(0, 16);
-                            resolve(response.data);
-                        }
-                    } catch (e) {
-                        console.error('Error parsing response:', e);
-                        resolve(null);
-                    } finally {
-                        window.removeEventListener('message', listener);
-                    }
-                };
-
-                window.addEventListener('message', listener);
-            });
-        } catch (error) {
-            console.error('Error fetching tournament:', error);
-            tg.showAlert(`Error loading tournament: ${error.message}`);
-            return null;
-        }
-    }
-
     // Function to parse URL parameters
     function getUrlParameter(name) {
         name = name.replace(/[[]/, '\\[').replace(/[\]]/, '\\]');
